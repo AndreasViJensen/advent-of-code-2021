@@ -21,6 +21,8 @@ plan <- mutate(plan,
                                       T ~ 0), 
                cum_aim = cumsum(aim_change),
                depth_change = if_else(direction == "forward", magnitude*cum_aim, 0)
-)
+)   # Calculate cumulative aim variable, and depth_change variable.
 head(plan)
-summarize(plan, sum(depth_change)) * sums["forward",]
+
+summarize(plan, sum(depth_change)) * sums["forward",] #Product of final depth and horizontal position
+
