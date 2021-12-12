@@ -1,6 +1,5 @@
 ####################################
-# Day 1 of Advent of Code 2021
-# Author: AVJ
+# Day 1 of Advent of Code 2021 /avj 
 ####################################
 
 library(dplyr)
